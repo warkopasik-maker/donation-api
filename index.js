@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 // ==========================
 // ENVIRONMENT VARIABLES
 // ==========================
-const SECRET_KEY = process.env.SECRET_KEY || "DONASI123"; // Secret untuk endpoint
+const SECRET_KEY = process.env.SECRET_KEY || "WARKOPASIKDONASI"; // Secret untuk endpoint
 const PORT = process.env.PORT || 3000;
 
 // ==========================
@@ -93,3 +93,4 @@ app.post("/api/register/:secret", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Donation API running on port ${PORT}`);
 });
+
